@@ -1,0 +1,66 @@
+.bg-body-tertiary{
+    background:linear-gradient(80deg,var(--color-uno) 
+    ,var(--color-dos));
+}
+
+.bg-body-tertiary .texto{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.bg-body-tertiary .texto-costum{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.bg-body-tertiary .desplegable:hover{
+    background: linear-gradient(80deg,#90b3a3 ,var(--color-dos));
+    
+}
+
+.texto-costum{
+    position: relative;
+} 
+
+.texto-costum:after{
+    content:"";
+    width: 0;
+    height: 4px;
+    background-color: #8FBC8F;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+     will-change: width; 
+}
+
+.texto-costum:hover:after{
+    width: 100%;
+    right:0;
+}  
+
+.d-flex .btn{
+    background-color: var(--color-cambiobtn);
+    color:var(--color-texto);
+}
+
+.d-flex .btn:active{
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+}
+
+
+
+@media all and (max-width: 991px){
+.d-flex {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.texto-costum::after{
+    content: none;
+}
+}

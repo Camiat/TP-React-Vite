@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --color-uno:#9094B3;
+  --color-dos: #328068 ;
+  --color-boton:#4695a9;
+  --color-cambiobtn:#2c3dc1;
+  --color-titulo:black;
+  --color-texto:white;
+}
